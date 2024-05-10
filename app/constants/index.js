@@ -53,7 +53,7 @@ export const promt = [
  {
   privilage: 'guest',
   connector: '@',
-  username: 'mamba.sh',
+  username: 'Jaro.sh',
   endofline: '$'
  }
 ];

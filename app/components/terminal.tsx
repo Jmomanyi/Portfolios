@@ -464,7 +464,7 @@ const TerminalLayout = () => {
     <>
      {/* mamba.sh and say hi badge at the far right */}
      <div className='flex justify-between items-center mb-4'>
-      <p className='text-green-500 text-2xl font-mono'>mamba.sh</p>
+      <p className='text-green-500 text-2xl font-mono'>Jared's  portfolio</p>
       <button className='bg-green-500 text-white px-4 py-2 rounded' onClick={openCV}>View CV</button>
      </div>
 
@@ -474,7 +474,7 @@ const TerminalLayout = () => {
      </p>
      <p className='text-white font-mono'>Hi!</p>
      <p className='text-white font-mono mb-4'>
-                                          I&apos;m Ntina, am currently a 4th year computing student at the Univerisity of Dundee
+                                          I&apos;m Jared Momanyi a Computing Science graduate and tech enthusiast
      </p>
      <div className='mt-2' dangerouslySetInnerHTML={{__html: statsHtml}} />
      <hr className='border-gray-600 my-4' />
@@ -484,7 +484,7 @@ const TerminalLayout = () => {
      <button
       className='bg-green-500 text-white px-4 py-2 rounded-tr-lg rounded-tl-lg mt-1 mb-0'
       onClick={handleExploreClick}>
-                      What inspires Ntina?
+                      what inspires me? click to find out
      </button>
 
      {showQuotes && <InspirationCards />}
