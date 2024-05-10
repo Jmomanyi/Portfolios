@@ -7,8 +7,8 @@
 
 ### Lets Connect
 
-[💻GitHub |](https://github.com/Intina47)
-[🤝LinkedIn](https://www.linkedin.com/in/isaiah-ntina-0669a8224/)
+[💻GitHub |](https://github.com/jmomanyi)
+[🤝LinkedIn](https://www.linkedin.com/in/jared_momanyi)
 
 
 
