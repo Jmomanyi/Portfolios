@@ -1,0 +1,8 @@
+version: '3.8' 
+services:
+  my-app: portfolio
+    build: . .
+    ports:
+      - "3005:3000" 
+    working_dir: /app
+    command: ["node", "npm install &&npm run start"] 
