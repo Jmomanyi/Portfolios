@@ -1,8 +1,14 @@
-version: '3.8' 
-services:
-  my-app: portfolio
-    build: . .
+version: '3.8'
+
+services: 
+  portfolio:  
+    container_name: portfolio  
+    build:
+      context: .  # Assuming Dockerfile is in the same directory
+      dockerfile: DOCKERFILE
+    volumes:
+      - .:/app  # Mount project code for development
+      - /app/node_modules  # Exclude node_modules for efficiency
     ports:
-      - "3005:3000" 
-    working_dir: /app
-    command: ["node", "npm install &&npm run start"] 
+      - '3005:3000'  #map ports
+ 
