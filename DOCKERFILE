@@ -1,13 +1,11 @@
 
-FROM node:18-alpine AS development  # Optimized base image
+FROM node:18-alpine3.14
 
-# Install dependencies 
 WORKDIR /app
 COPY package*.json ./ 
 RUN npm install --silent 
 
-# Copy project files
 COPY . .
 
-# Start the development server
+
 CMD ["npm", "run", "start"]
