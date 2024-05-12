@@ -5,7 +5,7 @@ services:
     container_name: portfolio  
     build:
       context: . 
-      dockerfile: DOCKERFILE
+      dockerfile: Dockerfile
     volumes:
       - .:/app  # Mount project code for development
       - /app/node_modules  # Exclude node_modules for efficiency
