@@ -1,0 +1,67 @@
+/* styles-for-mobile.css */
+@media (max-width: 767px) {
+    .mobile-styles {
+      /* Your mobile-specific styles go here */
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+  }
+  h3{
+    font-size: 1rem;
+    margin: 0.5rem;
+    font-weight: bold;
+    color: aqua;
+  }
+  h4{
+    font-size: 1rem;
+    margin: 0.5rem;
+    font-weight: bold;
+    color:#7ee787;
+  }
+  ul li a {
+    color: #38a169;
+    text-decoration: none;
+    background-color: aliceblue;
+    padding: 0.5rem;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  a {
+    color: #38a169;
+    text-decoration: none;
+    background-color: black;
+    padding: 0.5rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+  a #latestrepo{
+    text-decoration: none;
+    /* zoom on hover */
+    transition: transform 0.3s;
+  }
+  
+  a:hover {
+    color: #38a169;
+    text-decoration: none;
+    background-color: lightblue;
+    transform: scale(1.05);
+  }
+  /* projects.md */
+  em {
+    color: #ffa28b;
+    font-style: normal;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  strong {
+    color: #38a169;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  ul{
+    margin-bottom:0.5rem;
+  }
+  li{
+    font-weight: lighter;
+  }
