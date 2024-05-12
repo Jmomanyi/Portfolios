@@ -1,13 +1,11 @@
 version: '3.8'
 services:
   portfolio:  
-    container_name: portfolio
-    build:   
-      context: . 
-      dockerfile: Dockerfile
+    container_name: portfolio  # This is optional, but helps you identify the container easily.
+    image: portfolio:latest  # Specify the image name and tag (latest is default if not specified).
     volumes:
       - .:/app  
       - /app/node_modules  
     ports:
-      - '3000:3000'  
+      - '3000:3000' 
  
