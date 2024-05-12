@@ -1,7 +1,7 @@
 # Builder Stage
 FROM node:18-alpine AS builder
 WORKDIR /app
-COPY package.json package-lock.json ./
+COPY package.json ./
 RUN npm install 
 COPY . .
 RUN npm run build   # Build your Next.js app
