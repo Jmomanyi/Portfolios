@@ -1,6 +1,4 @@
-### Language Breakdown
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Intina47&layout=compact&hide=html)
-![mamba's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Intina47&show_icons=true&theme=radical&exclude_repo=contributed&hide=contribs)
+
 ### Hi there 👋
 🚀 I am Jared,A computing science graduate and a chronic developer. My journey into the world of technology has been anything but ordinary. Growing up in the heart of Africa, I had my first encounter with an actual computer at the age of 16. It was a moment that forever changed my life. The sheer power and endless possibilities that technology held fascinated me beyond words.
 
