@@ -2,8 +2,8 @@
 import puppeteer from 'puppeteer';
 import pQueue from 'p-queue';
 // import path from 'path';
-import {connectToDatabase, disconnectFromDatabase} from 'app/utils/db.js';
-import { animalModel } from 'app/utils/models/Animal.js';
+import {connectToDatabase, disconnectFromDatabase} from '../../app/utils/db';
+import { animalModel } from '../../app/utils/models/Animal';
 // Create a queue with a concurrency limit of 1
 const queue = new pQueue({ concurrency: 1 });
 

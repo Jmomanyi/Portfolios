@@ -1,5 +1,5 @@
-import {connectToDatabase, disconnectFromDatabase} from 'app/utils/db.js';
-import { quoteModel } from 'app/utils/models/Quote.js';
+import {connectToDatabase, disconnectFromDatabase} from '../../app/utils/db';
+import { quoteModel } from '../../app/utils/models/Quote';
 
 export default async function handler(req, res) {
  try {

@@ -1,6 +1,6 @@
 //path: pages/api/randomAnimal.js
-import {connectToDatabase, disconnectFromDatabase} from 'app/utils/db.js';
-import { animalModel } from 'app/utils/models/Animal.js';
+import {connectToDatabase, disconnectFromDatabase} from '../../app/utils/db';
+import { animalModel } from '../../app/utils/models/Animal';
 
 export default async function handler(req, res) {
  try {
