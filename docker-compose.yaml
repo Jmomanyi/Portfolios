@@ -2,13 +2,9 @@ version: '3.8'
 
 services:
   portfolio:  
-    build:   # This is the only section needed for local build context
+    build:   
       context: . 
       dockerfile: Dockerfile
-    deploy:  # Swarm configurations
-      replicas: 1         # Set to 1 for a single replica
-      restart_policy:    # Ensure automatic restarts on failure (optional)
-        condition: on-failure 
     volumes:
       - .:/app  
       - /app/node_modules  
