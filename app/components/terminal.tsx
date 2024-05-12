@@ -464,7 +464,7 @@ const TerminalLayout = () => {
     <>
      {/* mamba.sh and say hi badge at the far right */}
      <div className='flex justify-between items-center mb-4'>
-      <p className='text-green-500 text-2xl font-mono'>Jared&apos;s  portfolio</p>
+      <p className='text-green-500 text-2xl font-mono'>Jared&apos;s portfolio</p>
       <button className='bg-green-500 text-white px-4 py-2 rounded' onClick={openCV}>View CV</button>
      </div>
 
