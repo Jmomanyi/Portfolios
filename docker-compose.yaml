@@ -1,14 +1,17 @@
 version: '3.8'
 
-services: 
+services:
   portfolio:  
-    container_name: portfolio  
-    build:
+    build:   # This is the only section needed for local build context
       context: . 
       dockerfile: Dockerfile
+    deploy:  # Swarm configurations
+      replicas: 1         # Set to 1 for a single replica
+      restart_policy:    # Ensure automatic restarts on failure (optional)
+        condition: on-failure 
     volumes:
-      - .:/app  # Mount project code for development
-      - /app/node_modules  # Exclude node_modules for efficiency
+      - .:/app  
+      - /app/node_modules  
     ports:
-      - '3005:3000'  #map ports
+      - '3005:3000'  
  
