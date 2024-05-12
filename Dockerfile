@@ -6,9 +6,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 RUN npm update  # Update packages to latest versions
-
-# Audit and Fix Vulnerabilities (Optional but Recommended)
-RUN npm audit fix
+RUN npm install -g npm@10.7.0
 
 # Copy the rest of the project
 COPY . .
