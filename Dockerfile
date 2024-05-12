@@ -4,9 +4,8 @@ WORKDIR /app
 
 # Install or Update Packages
 COPY package*.json ./
-RUN npm install
-RUN npm update  # Update packages to latest versions
-RUN npm install -g npm@10.7.0
+RUN npm ci --production 
+
 
 # Copy the rest of the project
 COPY . .
