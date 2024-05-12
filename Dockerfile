@@ -1,10 +1,18 @@
 # Builder Stage
 FROM node:21.7.1-alpine3.18 AS builder
 WORKDIR /app
-COPY package.json ./
-RUN npm install 
+
+# Install or Update Packages
+COPY package*.json ./
+RUN npm install
+RUN npm update  # Update packages to latest versions
+
+# Audit and Fix Vulnerabilities (Optional but Recommended)
+RUN npm audit fix
+
+# Copy the rest of the project
 COPY . .
-RUN npm run build   # Build your Next.js app
+RUN npm run build 
 
 # Production Stage
 FROM node:21.7.1-alpine3.18 AS production
@@ -15,6 +23,5 @@ COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
 
-
 EXPOSE 3000
-CMD ["npm", "run", "start"]  # Start the Next.js production server
+CMD ["npm", "start"] 
