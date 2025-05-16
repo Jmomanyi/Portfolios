@@ -66,7 +66,7 @@ const TerminalLayout = () => {
 
  const openCV = () => {
   // Open the CV in a new tab
-  window.open('/jared_momanyi_resume.pdf', '_blank');
+  window.open('/jared-momanyi-resume.pdf', '_blank');
  };
 
  // Clear terminal
