@@ -4,7 +4,7 @@ services:
     container_name: portfolio  
     image: portfolio:latest 
     env_file:
-      - env.local
+      - .env.local
     volumes:
       - .:/app  
       - /app/node_modules  
