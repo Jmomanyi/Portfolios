@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   portfolio:  
-    container_name: portfolio  # This is optional, but helps you identify the container easily.
+    container_name: portfolio  
     image: portfolio:latest 
     env_file:
       - env.local
