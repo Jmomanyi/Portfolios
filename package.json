@@ -1,5 +1,5 @@
 {
-  "name": "Jared",
+  "name": "jared",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -29,7 +29,7 @@
     "latest": "^0.2.0",
     "markdown-it": "^13.0.1",
     "mongoose": "^8.0.3",
-    "next": "^15.4.0-canary.38",
+    "next": "^15.3.2",
     "p-queue": "^8.0.1",
     "postcss": "^8.4.32",
     "puppeteer": "^24.8.2",
