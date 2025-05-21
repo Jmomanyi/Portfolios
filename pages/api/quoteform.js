@@ -1,6 +1,6 @@
 import React from 'react';
 
-import QuoteForm from '../app/components/admin/QuoteForm';
+import QuoteForm from '../../app/components/admin/QuoteForm';
 import '../app/globals.css';
 
 export default function QuoteFormPage() {

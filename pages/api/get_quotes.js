@@ -8,9 +8,9 @@ export default async function handler(req, res) {
   const { method } = req;
   if(method === 'GET'){
    const quotes = await quoteModel.find();
-   await disconnectFromDatabase();
    console.log('quotes called===========>');
    res.status(200).json(quotes);
+   await disconnectFromDatabase();
   } else {
    res.setHeader('Allow', ['GET']);
    res.status(405).json({error: `Method ${method} Not Allowed`});

@@ -13,7 +13,7 @@ const BootUpSequence = () => {
    } else {
     clearInterval(typing);
    }
-  }, 100);
+  }, 60);
   return () => clearInterval(typing);
  }, []);
 
